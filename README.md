@@ -60,3 +60,7 @@ Afterwards you need to install and configure [`husky`](https://github.com/typico
 `semantic-release` only makes sense if you integrate it into your CD/CI process. Check out the official docs on [CI configuration](https://semantic-release.gitbook.io/semantic-release/usage/ci-configuration) and the [CI recipes](https://semantic-release.gitbook.io/semantic-release/recipes/recipes#ci-configurations) to learn more about how you can use it with the CI tool of your choice.
 
 Since this config is using the GitHub and npm plugins, you must set a `GH_TOKEN` and an `NPM_TOKEN` environment variable in your CI environment as described on the docs page.
+
+## Known issues
+
+It seems like as if the custom commit types aren't respected by `@semantic-release/release-notes-generator`. This should be investigated. [This Stack Overflow issue might be helpful](https://stackoverflow.com/a/59094119/705377).

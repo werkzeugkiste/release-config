@@ -1,4 +1,4 @@
-# @werkzeugkiste/release-config [WIP] <img src="https://raw.githubusercontent.com/werkzeugkiste/release-config/master/semantic-release.svg?sanitize=true" height="40" align="right">
+# @werkzeugkiste/release-config <img src="https://raw.githubusercontent.com/werkzeugkiste/release-config/master/semantic-release.svg?sanitize=true" height="40" align="right">
 
 This is the shared [`semantic-release`](https://semantic-release.gitbook.io/) config for all things [@werkzeugkiste](https://www.github.com/werkzeugkiste) related. It includes a `semantic-release` config for libraries and a [`commitlint`](https://commitlint.js.org/) config that works well together with the `semantic-release` config. It also has `semantic-release` and `commitlint` as direct dependencies so it does not need to be installed separately.
 

@@ -79,5 +79,5 @@ Since this config is using the GitHub and npm plugins, you must set a `GH_TOKEN`
 
   - if you use the **_Rebase and merge_** or **_Create a merge commit_** function everything works "as expected": all your commits will be analyzed once they're merged into master and `semantic-release` will do its job correctly.
 
-    Here's a little illustration:
+    Here's a little illustration:<br/>
     ![](howto-pr.png)

@@ -1,18 +1,14 @@
 module.exports = {
-    extends: ['@commitlint/config-angular'],
+    extends: ['@commitlint/config-conventional'],
     rules: {
-        // experiment with the max length a little bit
-        'header-max-length': [2, 'always', 100],
+        // experiment with the max length a bit. tried 100, seems to be a little short.
+        'header-max-length': [2, 'always', 144],
         'type-enum': [
             2,
             'always',
             [
-                'major',
-                'breaking',
-                'minor',
                 'feat',
                 'feature',
-                'patch',
                 'fix',
                 'bugfix',
                 'hotfix',

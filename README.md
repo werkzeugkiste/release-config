@@ -63,4 +63,21 @@ Since this config is using the GitHub and npm plugins, you must set a `GH_TOKEN`
 
 ## Known issues
 
-It seems like as if the custom commit types aren't respected by `@semantic-release/release-notes-generator`. This should be investigated. [This Stack Overflow issue might be helpful](https://stackoverflow.com/a/59094119/705377).
+- ~~It seems like as if the custom commit types aren't respected by `@semantic-release/release-notes-generator`. This should be investigated. [This Stack Overflow issue might be helpful](https://stackoverflow.com/a/59094119/705377).~~
+
+  **solved:** the angular preset for `release-notes-generator` does not allow to assign custom types to specific sections.
+
+- when `BREAKING CHANGE:` is used in the footer to trigger a new major release, the subject in the header is not included in the release notes. I don't know if this is intentional but it feels wrong to me.
+
+## More info
+
+- `conventional-changelog-conventionalcommits` is used as preset for `release-notes-generator` because it allows us to assign our custom commit types to sections (_headlines_) in the generated release notes and changelog. The `angular` preset for example does not provide such a feature.
+- v8.3.3+ of `@commitlint/cli` and `@commitlint/config-conventional` is required for the breaking change shorthand syntax (_`<type>!:`_) to be parsed and recognized properly ([related comment](https://github.com/conventional-changelog/commitlint/issues/658#issuecomment-545172808)).
+- This config only triggers new releases from **master** branch. When you're working on branches there are a few important things you should know:
+
+  - if you use the **_Squash and merge_** function on GitHub, all previous commit messages are ignored by `semantic-release`! Only the last merge commit will be used. You should not do that unless it's absolutely necessary. Use the Pull Request title in a `semantic-release` way (i.e. prefix it with the commit type (`fix`, `feat`, etc.)) to tell `semantic-release` whether you want to release a major, minor or patch version. [You can read more about that here.](https://github.com/semantic-release/semantic-release/blob/master/docs/support/troubleshooting.md#squashed-commits-are-ignored-by-semantic-release)
+
+  - if you use the **_Rebase and merge_** or **_Create a merge commit_** function everything works "as expected": all your commits will be analyzed once they're merged into master and `semantic-release` will do its job correctly.
+
+    Here's a little illustration:
+    ![](howto-pr.png)

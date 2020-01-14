@@ -1,3 +1,10 @@
+### [1.0.1](https://github.com/werkzeugkiste/release-config/compare/v1.0.0...v1.0.1) (2020-01-14)
+
+
+### 📚 Docs
+
+* add missing line break to readme ([df96738](https://github.com/werkzeugkiste/release-config/commit/df96738fd5054b2a5c4b86524c72accac38c82d8))
+
 ## 1.0.0 (2020-01-14)
 
 

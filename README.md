@@ -67,7 +67,7 @@ Since this config is using the GitHub and npm plugins, you must set a `GH_TOKEN`
 
   **solved:** the angular preset for `release-notes-generator` does not allow to assign custom types to specific sections.
 
-- when `BREAKING CHANGE:` is used in the footer to trigger a new major release, the subject in the header is not included in the release notes. I don't know if this is intentional but it feels wrong to me.
+- ~~when `BREAKING CHANGE:` is used in the footer to trigger a new major release, the subject in the header is not included in the release notes. I don't know if this is intentional but it feels wrong to me.~~
 
 ## More info
 

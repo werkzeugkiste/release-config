@@ -35,7 +35,7 @@ module.exports = {
         [
             '@semantic-release/release-notes-generator',
             {
-                // using conventionalcommits here since the angular preset does not allow custom
+                // Using conventionalcommits here since the angular preset does not allow custom
                 // types for release notes generation.
                 preset: 'conventionalcommits',
                 presetConfig: {
@@ -65,7 +65,6 @@ module.exports = {
                 },
             },
         ],
-        // '@semantic-release/release-notes-generator',
         '@semantic-release/changelog',
         '@semantic-release/npm',
         '@semantic-release/github',

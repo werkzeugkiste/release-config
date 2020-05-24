@@ -1,3 +1,16 @@
+## [1.1.0](https://github.com/werkzeugkiste/release-config/compare/v1.0.1...v1.1.0) (2020-05-24)
+
+
+### 📚 Docs
+
+* **no-release:** magically resolved a known issue (that is no longer an issue) ([1b8f921](https://github.com/werkzeugkiste/release-config/commit/1b8f9213a7bcadd5d9988151d0b10e50b0df63b4))
+* update howto image ([7b07091](https://github.com/werkzeugkiste/release-config/commit/7b07091dded85e1d71723802d83697bf859d1a55))
+
+
+### 🧩 Features
+
+* add different configs for different release targets (apps, packages) ([f723ec5](https://github.com/werkzeugkiste/release-config/commit/f723ec59a71de0058603d8c3b88cb8dd72f2f5ce))
+
 ### [1.0.1](https://github.com/werkzeugkiste/release-config/compare/v1.0.0...v1.0.1) (2020-01-14)
 
 

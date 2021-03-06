@@ -41,7 +41,7 @@ module.exports = {
                 presetConfig: {
                     types: [
                         // { type: 'major', section: 'Breaking' },
-                        // { type: 'breaking', section: 'Breaking' },
+                        { type: 'breaking', section: 'Breaking' },
                         { type: 'feat', section: '🧩 Features' },
                         { type: 'feature', section: '🧩 Features' },
                         { type: 'fix', section: '🔧 Fixes' },
